@@ -1,0 +1,34 @@
+.filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.filter > .item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-button {
+  border: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 6px 22px;
+
+  color: var(--title-color);
+  background-color: var(--background-color-command);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: color var(--time) var(--timing-function),
+    background-color var(--time) var(--timing-function),
+    box-shadow var(--time) var(--timing-function);
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--box-shadow-button-filter);
+}
