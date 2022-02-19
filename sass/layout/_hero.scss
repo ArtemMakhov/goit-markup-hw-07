@@ -9,7 +9,7 @@
   background-color: var(--background-color-footer);
   text-align: center;
 }
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 40px;
 
@@ -20,7 +20,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero .hero-button {
+.hero__button {
   display: inline-block;
   padding: 10px 32px;
 

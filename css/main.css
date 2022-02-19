@@ -432,7 +432,7 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 40px;
   color: var(--primary-white-color);
@@ -443,7 +443,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero .hero-button {
+.hero__button {
   display: inline-block;
   padding: 10px 32px;
   color: var(--primary-white-color);
