@@ -1,12 +1,12 @@
-.filter {
+.filter__list {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
-.filter > .item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.filter-button {
+.filter__button {
   border: transparent;
   font-family: inherit;
   cursor: pointer;
@@ -25,10 +25,11 @@
   transition: color var(--time) var(--timing-function),
     background-color var(--time) var(--timing-function),
     box-shadow var(--time) var(--timing-function);
-}
-.filter-button:hover,
-.filter-button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--box-shadow-button-filter);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow-button-filter);
+  }
 }

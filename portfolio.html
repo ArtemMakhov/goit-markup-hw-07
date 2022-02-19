@@ -19,8 +19,8 @@
     <!-- шапка сайта-->
     <header class="page-header">
       <div class="page-header__main container">
-        <a class="page-header__logo" href="index.html"
-          >Web<span class="page-header__logo--dark">Studio</span></a
+        <a class="logo logo--primary" href="index.html"
+          >Web<span class="logo--dark">Studio</span></a
         >
         <nav class="site-nav">
           <ul class="site-nav__list">
@@ -55,20 +55,22 @@
       </div>
     </header>
     <main>
-      <section class="section">
-        <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="filter">
-            <li class="item"><button type="button" class="filter-button">Все</button></li>
-            <li class="item">
-              <button type="button" class="filter-button">Веб-сайты</button>
+      <section class="filter section">
+        <div class="filter__container container">
+          <h1 class="filter__title visually-hidden">Портфолио</h1>
+          <ul class="filter__list">
+            <li class="filter__item"><button type="button" class="filter__button">Все</button></li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
-            <li class="item">
-              <button type="button" class="filter-button">Приложения</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
             </li>
-            <li class="item"><button type="button" class="filter-button">Дизайн</button></li>
-            <li class="item">
-              <button type="button" class="filter-button">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
           <ul class="exemples-list list">
@@ -240,76 +242,76 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="main-footer">
-      <div class="container footer-box">
-        <div>
-          <a class="logo-footer" href="index.html"
-            >Web<span class="logo-accent-light">Studio</span></a
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="contacts">
+          <a class="logo logo--secondary" href="index.html"
+            >Web<span class="logo--light">Studio</span></a
           >
           <address>
-            <ul class="add">
-              <li class="add-item item">
+            <ul class="address">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/64KcN4ARRGodhjcC8"
-                  class="add-link"
+                  class="address__link address__link--white"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
                   г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="add-item item">
-                <a href="mailto:info@example.com" class="link">info@example.com</a>
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
               </li>
-              <li class="add-item item">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-networks">
-          <p class="footer-text">присоединяйтесь</p>
-          <ul class="footer-icon-list">
-            <li class="icon-item">
-              <a href="" class="footer-link link">
-                <svg class="icon-networks" width="20" height="20">
+        <div class="networks">
+          <p class="networks__text">присоединяйтесь</p>
+          <ul class="networks__list">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-item">
-              <a href="" class="footer-link link">
-                <svg class="icon-networks" width="20" height="20">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-item">
-              <a href="" class="footer-link link">
-                <svg class="icon-networks" width="20" height="20">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-item">
-              <a href="" class="footer-link link">
-                <svg class="icon-networks" width="20" height="20">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="subscription-form">
-          <p class="subscription-text">Подпишитесь на рассылку</p>
-          <div class="subscription">
+        <form class="subscription">
+          <p class="subscription__text">Подпишитесь на рассылку</p>
+          <div class="subscription__field">
             <label>
-              <input type="email" class="subscription-input" name="e-mail" placeholder="E-mail" />
+              <input type="email" class="subscription__input" name="e-mail" placeholder="E-mail" />
             </label>
 
-            <button class="subscription-button" type="submit">
+            <button class="subscription__button" type="submit">
               Подписаться
-              <svg class="icon-subscription" width="24" height="24">
+              <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
