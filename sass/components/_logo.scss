@@ -1,4 +1,4 @@
-.logo-header,
+.page-header__logo,
 .logo-footer {
   font-family: 'Raleway', cursive;
   font-weight: 700;
@@ -7,11 +7,11 @@
   text-decoration: none;
 }
 
-.logo-header {
+.page-header__logo {
   margin-right: 93px;
   color: var(--accent-color);
 }
-.logo-accent-dark {
+.page-header__logo--dark {
   color: var(--logo-black-color);
 }
 .logo-accent-light {

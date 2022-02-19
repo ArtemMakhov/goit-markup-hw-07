@@ -18,32 +18,36 @@
   <body>
     <!-- шапка сайта-->
     <header class="page-header">
-      <div class="container main-header">
-        <nav class="main-header">
-          <a class="logo-header" href="index.html"
-            >Web<span class="logo-accent-dark">Studio</span></a
-          >
-          <ul class="site-nav">
-            <li class="item">
-              <div class="current-studio"><a href="" class="link current">Студия</a></div>
+      <div class="page-header__main container">
+        <a class="page-header__logo" href="index.html"
+          >Web<span class="page-header__logo--dark">Studio</span></a
+        >
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <div class="site-nav__item--current">
+                <a href="" class="site-nav__link current">Студия</a>
+              </div>
             </li>
-            <li class="item"><a href="portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="auth-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              ><svg class="nav-icon" width="16" height="12">
+          <li class="auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="auth-nav__link"
+              ><svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#letter"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="nav-icon" width="10" height="16">
+          <li class="auth-nav__item">
+            <a href="tel:+380961111111" class="auth-nav__link">
+              <svg class="auth-nav__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a

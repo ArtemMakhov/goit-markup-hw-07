@@ -74,7 +74,7 @@ body {
   margin: -1px;
 }
 
-.logo-header,
+.page-header__logo,
 .logo-footer {
   font-family: 'Raleway', cursive;
   font-weight: 700;
@@ -83,12 +83,12 @@ body {
   text-decoration: none;
 }
 
-.logo-header {
+.page-header__logo {
   margin-right: 93px;
   color: var(--accent-color);
 }
 
-.logo-accent-dark {
+.page-header__logo--dark {
   color: var(--logo-black-color);
 }
 
@@ -336,20 +336,25 @@ body {
   background-color: #188ce8;
 }
 
-.main-header {
+.page-header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__main {
   display: flex;
   align-items: center;
 }
 
-.site-nav {
+.site-nav__list {
   display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -362,24 +367,19 @@ body {
   transition: color var(--time) var(--timing-function);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav__link.current {
   color: var(--accent-color);
 }
 
-.current-studio {
+.site-nav__item--current {
   position: relative;
 }
 
-.current-portfolio {
-  position: relative;
-}
-
-.site-nav .link.current::after {
+.site-nav__link.current::after {
   position: absolute;
   bottom: -1px;
   right: 0;
@@ -396,11 +396,11 @@ body {
   margin-left: auto;
 }
 
-.auth-nav .item + .item {
+.auth-nav__item + .auth-nav__item {
   margin-left: 50px;
 }
 
-.auth-nav .link {
+.auth-nav__link {
   display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -412,19 +412,13 @@ body {
   transition: color var(--time) var(--timing-function);
 }
 
-.nav-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav__link:hover, .auth-nav__link:focus {
   color: var(--accent-color);
 }
 
-.page-header {
-  background-color: var(--primary-white-color);
-  border-bottom: 1px solid #ececec;
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .hero {
