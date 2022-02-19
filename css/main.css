@@ -116,7 +116,8 @@ body {
 }
 
 .section-title,
-.works__title {
+.works__title--main,
+.team__title--main {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-color);
@@ -126,7 +127,7 @@ body {
   text-align: center;
 }
 
-.team-title,
+.team__title,
 .advantages__title,
 .portfolio-title {
   margin-top: 0;
@@ -536,48 +537,52 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team-list .item:not(:last-child) {
-  margin-right: var(--main-gap);
+.team {
+  background-color: var(--background-color-command);
 }
 
-.team-list .item {
+.team__list {
+  display: flex;
+}
+
+.team__item {
   background-color: var(--primary-white-color);
   box-shadow: var(--box-shadow-color);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list {
-  display: flex;
+.team__item:not(:last-child) {
+  margin-right: var(--main-gap);
 }
 
-.team-card-content {
+.team__card-content {
   text-align: center;
   padding-top: var(--main-gap);
   padding-bottom: var(--main-gap);
 }
 
-.team-title {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.team {
-  background-color: var(--background-color-command);
-}
-
-.team-text {
+.team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.team-icon-list {
+.team-social {
   display: flex;
   padding: 0px 32px;
 }
 
-.team-link {
+.team-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -588,18 +593,13 @@ body {
   transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
 }
 
-.team-link:hover,
-.team-link:focus {
+.team-social__link:hover, .team-social__link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.icon-networks {
+.team-social__icon {
   fill: currentColor;
-}
-
-.icon-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .clients-list {

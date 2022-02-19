@@ -1,5 +1,6 @@
 .section-title,
-.works__title {
+.works__title--main,
+.team__title--main {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -11,7 +12,7 @@
   text-align: center;
 }
 
-.team-title,
+.team__title,
 .advantages__title,
 .portfolio-title {
   margin-top: 0;
