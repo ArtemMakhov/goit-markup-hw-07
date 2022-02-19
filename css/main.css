@@ -126,7 +126,7 @@ body {
 }
 
 .team-title,
-.advantages-title,
+.advantages__title,
 .portfolio-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -460,29 +460,29 @@ body {
   cursor: pointer;
 }
 
-.advantages-list {
+.advantages__list {
   display: flex;
 }
 
-.advantages-item {
+.advantages__item {
   flex-basis: calc(100% / 4);
 }
 
-.advantages-item:not(:last-child) {
+.advantages__item:not(:last-child) {
   margin-right: var(--main-gap);
 }
 
-.advantages-title {
+.advantages__title {
   text-transform: uppercase;
 }
 
-.advantages-text {
+.advantages__text {
   font-size: 14px;
   line-height: 1.71;
   height: 75px;
 }
 
-.advantages-thumb {
+.advantages__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,7 +492,7 @@ body {
   border-radius: 4px;
 }
 
-.advantages-icon {
+.advantages__icon {
   width: 70px;
   height: 70px;
 }
