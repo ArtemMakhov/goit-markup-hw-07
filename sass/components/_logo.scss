@@ -1,26 +1,24 @@
-.page-header__logo,
-.logo-footer {
+.logo {
   font-family: 'Raleway', cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
 
-.page-header__logo {
-  margin-right: 93px;
   color: var(--accent-color);
 }
-.page-header__logo--dark {
+
+.logo--primary {
+  margin-right: 93px;
+}
+.logo--dark {
   color: var(--logo-black-color);
 }
-.logo-accent-light {
+.logo--light {
   color: var(--primary-white-color);
 }
 
-.logo-footer {
+.logo--secondary {
   display: inline-block;
   margin-bottom: 20px;
-
-  color: var(--accent-color);
 }
