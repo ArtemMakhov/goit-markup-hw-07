@@ -115,7 +115,8 @@ body {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section-title,
+.works__title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-color);
@@ -497,23 +498,23 @@ body {
   height: 70px;
 }
 
-.works-section {
+.works {
   padding-top: 0;
 }
 
-.works-list {
+.works__list {
   display: flex;
 }
 
-.works-list .item:not(:last-child) {
-  margin-right: var(--main-gap);
-}
-
-.works-item {
+.works__item {
   position: relative;
 }
 
-.works-text {
+.works__item:not(:last-child) {
+  margin-right: var(--main-gap);
+}
+
+.works__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -523,7 +524,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.works-background-text {
+.works__text--background {
   position: absolute;
   bottom: 0;
   left: 0;

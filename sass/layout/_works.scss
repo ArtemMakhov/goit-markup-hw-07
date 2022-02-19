@@ -1,16 +1,18 @@
-.works-section {
+.works {
   padding-top: 0;
 }
-.works-list {
+.works__list {
   display: flex;
 }
-.works-list .item:not(:last-child) {
-  margin-right: var(--main-gap);
-}
-.works-item {
+
+.works__item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: var(--main-gap);
+  }
 }
-.works-text {
+.works__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -18,17 +20,18 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
-.works-background-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 70px;
-  width: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &--background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
 
-  background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
