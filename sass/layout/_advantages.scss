@@ -4,10 +4,10 @@
 
 .advantages__item {
   flex-basis: calc(100% / 4);
-}
 
-.advantages__item:not(:last-child) {
-  margin-right: var(--main-gap);
+  &:not(:last-child) {
+    margin-right: var(--main-gap);
+  }
 }
 
 .advantages__title {

@@ -113,7 +113,6 @@ body {
   padding-bottom: 94px;
 }
 
-.section-title,
 .clients__title--main,
 .works__title--main,
 .team__title--main {
@@ -128,7 +127,7 @@ body {
 
 .team__title,
 .advantages__title,
-.portfolio-title {
+.card-content__title {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-color);
@@ -271,6 +270,12 @@ body {
   overflow: hidden;
 }
 
+.checkbox__input:checked + .checkbox__icon {
+  background-color: #2196f3;
+  background-image: url("../images/full-check.svg");
+  fill: #2196f3;
+}
+
 .checkbox__icon {
   display: inline-block;
   width: 16px;
@@ -282,12 +287,6 @@ body {
 
 .checkbox__input:focus-visible + .checkbox__icon {
   outline: 1px solid var(--accent-color);
-}
-
-.checkbox__input:checked + .checkbox__icon {
-  background-color: #2196f3;
-  background-image: url("../images/full-check.svg");
-  fill: #2196f3;
 }
 
 .checkbox__link {
@@ -464,7 +463,6 @@ body {
   border-radius: 4px;
   font-family: inherit;
   border: transparent;
-  cursor: pointer;
 }
 
 .advantages__list {
@@ -796,24 +794,34 @@ body {
   box-shadow: var(--box-shadow-button-filter);
 }
 
-.exemples-list {
+.exemples {
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--main-gap));
   margin-bottom: calc(-1 * var(--main-gap));
 }
 
-.exemples-item {
+.exemples__item {
   margin-right: var(--main-gap);
   margin-bottom: var(--main-gap);
 }
 
-.card-thumb {
+.exemples__work {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow var(--time) var(--timing-function);
+}
+
+.exemples__work:hover, .exemples__work:focus {
+  box-shadow: var(--box-shadow-exemples-work);
+}
+
+.exemples__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.thumb-overlay {
+.exemples__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -825,7 +833,13 @@ body {
   opacity: 0;
 }
 
-.card-text {
+.exemples__work:hover .exemples__overlay,
+.exemples__work:focus .exemples__overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.exemples__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -843,7 +857,7 @@ body {
   border: 1px solid var(--border-portfolio-color);
 }
 
-.portfolio-title {
+.card-content__title {
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 18px;
@@ -851,28 +865,11 @@ body {
   letter-spacing: 0.06em;
 }
 
-.portfolio-text {
+.card-content__text {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
-}
-
-.work-exemples {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow var(--time) var(--timing-function);
-}
-
-.work-exemples:hover .thumb-overlay,
-.work-exemples:focus .thumb-overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.work-exemples:hover,
-.work-exemples:focus {
-  box-shadow: var(--box-shadow-exemples-work);
 }
 /*# sourceMappingURL=main.css.map */
